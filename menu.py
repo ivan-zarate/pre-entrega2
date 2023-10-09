@@ -13,7 +13,7 @@ def validar_opcion(opcion):
 def registro():
             
     Cliente.usuario=input("Ingrese su nombre: ")
-    Cliente.edad=input("Ingrese su edad: ")
+    Cliente.edad=int(input("Ingrese su edad: "))
     Cliente.contrasena=input("Ingrese su contraseña: ")
 
     data.append({

@@ -3,10 +3,13 @@ import json
 class Cliente:
     
    def __init__(self, usuario, edad, contrasena):
+    try:
       self.usuario= usuario
-      self.edad= int(edad)
+      self.edad= edad
       self.contrasena= contrasena
-    
+    except :
+      print('An exception occurred')
+      
    def __str__(self) -> str:
           return f"Gracias por registrarse: {self.usuario}"
            
