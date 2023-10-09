@@ -15,22 +15,20 @@ class Cliente:
            
    def dataBase(data):
         with open("clientes.json", "w") as file:
-          json.dump(data, file, indent=4)
+          json.dump(data, file)
           file.write('\n')
      
-   
-        
    def ver_informacion():
      with open("clientes.json", "r") as file:
         contactos = file.readlines()
         for contacto in contactos:
             contacto_dict = json.loads(contacto)
-            formatContact=contacto_dict['cliente'][0]
-            print("Información del contacto:")
-            print(f"Nombre: {formatContact['usuario']}")
-            print(f"Edad: {formatContact['edad']}")
-            print(f"Contraseña: {formatContact['contrasena']}")
-            return 
+            for x in contacto_dict:
+              print("Información del contacto:")
+              print(f"Nombre: {contacto_dict['usuario']}")
+              print(f"Edad: {contacto_dict['edad']}")
+              print(f"Contraseña: {contacto_dict['contrasena']}")
+              return
         
    """def registro(usuario, contrasena):
       try:
