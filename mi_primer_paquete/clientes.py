@@ -36,7 +36,7 @@ class Cliente:
           for x in client_dict:
               if x['usuario'] == usuario:
                   if x['contrasena']==contrasena:
-                      return f"\nBienvenido {usuario} !\n "
+                      return f"\nBienvenid@ {usuario} !\n "
                   else:
                       return "\nLa contraseña ingresada no es correcta\n" 
       except:

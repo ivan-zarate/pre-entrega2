@@ -10,7 +10,7 @@ while True:
         if opcion == '1':
                 registro()
         elif opcion == '2':
-                usuario=input("\nIngrese su usuario: ")
+                usuario=input("\nIngrese su usuario: ").capitalize()
                 contrasena=input("Ingrese su contrasena: ")
                 result=Cliente.login(usuario, contrasena)
                 if result==None:

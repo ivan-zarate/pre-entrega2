@@ -22,7 +22,7 @@ def registro():
     Cliente.edad=int(input("Ingrese su edad: "))
     Cliente.contrasena=input("Ingrese su contraseña: ")
     data.append({
-        'usuario':Cliente.usuario,
+        'usuario':Cliente.usuario.capitalize(),
         'edad':Cliente.edad,
         'contrasena':Cliente.contrasena,
     })
